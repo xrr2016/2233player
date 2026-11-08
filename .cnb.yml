@@ -1,0 +1,11 @@
+main:
+  push:
+    - imports: https://cnb.cool/coldstoneboy/secrets/-/blob/main/github-sync.yml
+      stages:
+        - name: sync to github
+          image: tencentcom/git-sync
+          settings:
+            target_url: https://github.com/xrr2016/2233player.git
+            auth_type: https
+            username: ${GITHUB_USERNAME}
+            password: ${GITHUB_ACCESS_TOKEN}

@@ -1,11 +1,12 @@
-import { mount, signal, Text, View } from "nsh";
 import { Badge, Counter, Format } from "2233player/native";
+import { mount, signal, Text, View } from "nsh";
 
 // Its count lives in Rust (`src/lib.rs`).
 const counter = new Counter();
 
 function App() {
   const count = signal(counter.count);
+  
   return (
     <View
       style={{
@@ -17,6 +18,7 @@ function App() {
         alignItems: "center", justifyContent: "center", gap: 16,
       }}
     >
+      <Text>2233player</Text>
       <Text style={{ fontSize: 22 }}>{count() ? `Pressed ${Format.times(count())}` : "Not pressed yet"}</Text>
       <Badge label="Press me" onPress={() => count.set(counter.increment())} />
     </View>
