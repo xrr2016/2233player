@@ -1,0 +1,763 @@
+{
+  "schemaVersion": 3.2,
+  "generatedAt": "2026-11-08T20:12:42.097Z",
+  "source": "desktop-rich",
+  "usageSource": "transcript-tokens",
+  "availability": {
+    "credits": "unavailable",
+    "roundTrips": "measured",
+    "contextRatio": "measured",
+    "tokens": "measured",
+    "outputTokens": "measured",
+    "cachedTokens": "measured",
+    "categoryShare": "derived",
+    "toolShare": "derived",
+    "fileShare": "derived",
+    "systemPrompt": "derived",
+    "contextWindow": "derived",
+    "compactions": "measured",
+    "compactionCost": "measured",
+    "model": "measured",
+    "title": "measured",
+    "toolCalls": "measured",
+    "fileReads": "measured",
+    "userTurns": "measured",
+    "userContextLimit": "fallback"
+  },
+  "session": {
+    "id": "01c878cc-5fea-401e-aba0-0e695d964e15",
+    "title": "如何把 nsh 升级到 0.4.0 https:",
+    "titleSource": "first-user",
+    "model": "magpie/group/smart-split",
+    "modelSource": "runtime-config",
+    "cwd": "E:\\Projects\\2233player",
+    "turns": 1,
+    "roundTrips": 19,
+    "compactions": 0,
+    "startedAt": "2026-11-08T20:06:10.156Z",
+    "endedAt": "2026-11-08T20:12:41.838Z"
+  },
+  "context": {
+    "contextWindow": 1049000,
+    "contextWindowSource": "derived-from-usage",
+    "systemPromptTokens": 22475,
+    "netContextTokens": 47762,
+    "peakContextTokens": 47762,
+    "peakContextRatio": 0.045530981887511916,
+    "peakSessionTokens": 47762,
+    "peakSessionRatio": 0.045530981887511916,
+    "peakSessionNotable": false,
+    "peakAdvice": {
+      "level": "low",
+      "tone": "info",
+      "text": "低于盈亏线（39%）。此时压缩在 token 上是亏的：省下的还不够付摘要输出加压缩后重读，别压"
+    },
+    "userContextLimit": 200000,
+    "userContextLimitSource": "default",
+    "peakUserRatio": 0.23881,
+    "peakUserAdvice": {
+      "level": "low",
+      "tone": "info",
+      "text": "低于盈亏线（39%）。此时压缩在 token 上是亏的：省下的还不够付摘要输出加压缩后重读，别压"
+    },
+    "currentContextTokens": 47762,
+    "netUserRatio": 0.23881,
+    "netUserAdvice": {
+      "level": "low",
+      "tone": "info",
+      "text": "低于盈亏线（39%）。此时压缩在 token 上是亏的：省下的还不够付摘要输出加压缩后重读，别压"
+    },
+    "netWindowRatio": 0.045530981887511916,
+    "observedAutoCompactions": 0,
+    "observedAutoTriggerTokens": null,
+    "autoTriggerRatio": null,
+    "thresholdNotEnforced": true
+  },
+  "totals": {
+    "billedInputTokens": 769673,
+    "netContextTokens": 47762,
+    "peakContextTokens": 47762,
+    "amplification": 16.11,
+    "attributedTokens": 769673,
+    "coverage": 1,
+    "credits": 0,
+    "originalCredits": 0,
+    "outputTokens": 5963,
+    "cachedTokens": 727552,
+    "cachedTrips": 19,
+    "cachedShare": 0.9452741618843327,
+    "toolCalls": 24,
+    "fileReads": 5
+  },
+  "creditsCoverage": {
+    "trips": 0,
+    "roundTrips": 19,
+    "tokens": 0,
+    "tokenShare": 0,
+    "full": false
+  },
+  "compactionCost": {
+    "count": 0,
+    "items": [],
+    "totals": {
+      "preTokens": 0,
+      "postTokens": 0,
+      "savedTokens": 0,
+      "measured": 0
+    }
+  },
+  "proxy": {
+    "matched": 0,
+    "requests": 19,
+    "breakdown": {
+      "proxy": 0,
+      "transcriptTokens": 19,
+      "transcriptRatio": 0
+    },
+    "logPath": "C:\\Users\\coldstonestudio\\.qoder-credits-proxy\\usage.jsonl",
+    "logExists": false,
+    "logRecords": 0,
+    "configured": false,
+    "enabled": true,
+    "port": 49787,
+    "lastRecordAt": null,
+    "dormant": false,
+    "status": null,
+    "statusSuperseded": false
+  },
+  "byCategory": [
+    {
+      "key": "tool_result",
+      "label": "工具返回",
+      "tokens": 99555,
+      "share": 0.12934668843472225
+    },
+    {
+      "key": "system",
+      "label": "系统提示词",
+      "tokens": 427025,
+      "share": 0.5548135376971779
+    },
+    {
+      "key": "assistant_thinking",
+      "label": "模型思考",
+      "tokens": 19716,
+      "share": 0.025615706251132825
+    },
+    {
+      "key": "assistant_tool_use",
+      "label": "工具调用",
+      "tokens": 13227,
+      "share": 0.01718502976051533
+    },
+    {
+      "key": "assistant_text",
+      "label": "模型回复",
+      "tokens": 2008,
+      "share": 0.0026086421406335326
+    },
+    {
+      "key": "user_input",
+      "label": "用户输入",
+      "tokens": 405,
+      "share": 0.0005260703544347172
+    },
+    {
+      "key": "attachment",
+      "label": "附件/技能",
+      "tokens": 207738,
+      "share": 0.2699043253613834
+    }
+  ],
+  "byCategoryDetail": [
+    {
+      "key": "tool_result",
+      "label": "工具返回",
+      "tokens": 99555,
+      "share": 0.12934668843472225,
+      "children": [
+        {
+          "tool": "Bash",
+          "label": "（无路径）",
+          "kind": "shell",
+          "tokens": 45939,
+          "share": 0.05968684191893478,
+          "catShare": 0.46144855072232566,
+          "trips": 151
+        },
+        {
+          "tool": "WebFetch",
+          "label": "（无路径）",
+          "kind": "other",
+          "tokens": 36406,
+          "share": 0.047300584049719825,
+          "catShare": 0.3656884039485181,
+          "trips": 27
+        },
+        {
+          "tool": "Read",
+          "label": "src/lib.rs",
+          "kind": "read",
+          "tokens": 10678,
+          "share": 0.01387311844456372,
+          "catShare": 0.1072553044260202,
+          "trips": 15
+        },
+        {
+          "tool": "Read",
+          "label": "App.tsx",
+          "kind": "read",
+          "tokens": 3272,
+          "share": 0.004250985811537494,
+          "catShare": 0.0328650533150901,
+          "trips": 13
+        },
+        {
+          "tool": "Read",
+          "label": "App.test.tsx",
+          "kind": "read",
+          "tokens": 1756,
+          "share": 0.002281492385091224,
+          "catShare": 0.017638583659933676,
+          "trips": 13
+        },
+        {
+          "tool": "Read",
+          "label": "Cargo.toml",
+          "kind": "read",
+          "tokens": 887,
+          "share": 0.0011521618967213212,
+          "catShare": 0.008907548470425557,
+          "trips": 17
+        },
+        {
+          "tool": "Read",
+          "label": "nsh.json",
+          "kind": "read",
+          "tokens": 617,
+          "share": 0.0008015039281539628,
+          "catShare": 0.006196555457687346,
+          "trips": 17
+        }
+      ]
+    },
+    {
+      "key": "system",
+      "label": "系统提示词",
+      "tokens": 427025,
+      "share": 0.5548135376971779,
+      "children": []
+    },
+    {
+      "key": "assistant_thinking",
+      "label": "模型思考",
+      "tokens": 19716,
+      "share": 0.025615706251132825,
+      "children": []
+    },
+    {
+      "key": "assistant_tool_use",
+      "label": "工具调用",
+      "tokens": 13227,
+      "share": 0.01718502976051533,
+      "children": [
+        {
+          "tool": "Bash",
+          "label": "（无路径）",
+          "kind": "shell",
+          "tokens": 10283,
+          "share": 0.013360489983501065,
+          "catShare": 0.7774493364101351,
+          "trips": 151
+        },
+        {
+          "tool": "WebFetch",
+          "label": "（无路径）",
+          "kind": "other",
+          "tokens": 1829,
+          "share": 0.002376366891289949,
+          "catShare": 0.13828122059758882,
+          "trips": 27
+        },
+        {
+          "tool": "Read",
+          "label": "nsh.json",
+          "kind": "read",
+          "tokens": 251,
+          "share": 0.0003256109708125473,
+          "catShare": 0.018947361473919448,
+          "trips": 17
+        },
+        {
+          "tool": "Read",
+          "label": "Cargo.toml",
+          "kind": "read",
+          "tokens": 251,
+          "share": 0.0003256109708125473,
+          "catShare": 0.018947361473919448,
+          "trips": 17
+        },
+        {
+          "tool": "Read",
+          "label": "src/lib.rs",
+          "kind": "read",
+          "tokens": 223,
+          "share": 0.000289952636301171,
+          "catShare": 0.01687239651847284,
+          "trips": 15
+        },
+        {
+          "tool": "Read",
+          "label": "App.test.tsx",
+          "kind": "read",
+          "tokens": 210,
+          "share": 0.00027299908881433453,
+          "catShare": 0.015885866513980832,
+          "trips": 13
+        },
+        {
+          "tool": "Read",
+          "label": "App.tsx",
+          "kind": "read",
+          "tokens": 180,
+          "share": 0.00023399921898371528,
+          "catShare": 0.01361645701198357,
+          "trips": 13
+        }
+      ]
+    },
+    {
+      "key": "assistant_text",
+      "label": "模型回复",
+      "tokens": 2008,
+      "share": 0.0026086421406335326,
+      "children": []
+    },
+    {
+      "key": "user_input",
+      "label": "用户输入",
+      "tokens": 405,
+      "share": 0.0005260703544347172,
+      "children": []
+    },
+    {
+      "key": "attachment",
+      "label": "附件/技能",
+      "tokens": 207738,
+      "share": 0.2699043253613834,
+      "children": []
+    }
+  ],
+  "byTool": [
+    {
+      "tool": "Bash",
+      "tokens": 56223,
+      "calls": 17,
+      "perCall": 3307,
+      "share": 0.07304733190243581
+    },
+    {
+      "tool": "WebFetch",
+      "tokens": 38235,
+      "calls": 2,
+      "perCall": 19118,
+      "share": 0.049676950941009775
+    },
+    {
+      "tool": "Read",
+      "tokens": 18324,
+      "calls": 5,
+      "perCall": 3665,
+      "share": 0.02380743535179204
+    }
+  ],
+  "byFile": [
+    {
+      "attr": "file:E:\\Projects\\2233player\\src\\lib.rs",
+      "label": "src/lib.rs",
+      "kind": "read",
+      "tool": "Read",
+      "selfTokens": 635,
+      "reads": 1,
+      "trips": 30,
+      "billed": 10901,
+      "perRead": 10901,
+      "share": 0.014163071080864894
+    },
+    {
+      "attr": "file:E:\\Projects\\2233player\\App.tsx",
+      "label": "App.tsx",
+      "kind": "read",
+      "tool": "Read",
+      "selfTokens": 230,
+      "reads": 1,
+      "trips": 26,
+      "billed": 3452,
+      "perRead": 3452,
+      "share": 0.00448498503052121
+    },
+    {
+      "attr": "file:E:\\Projects\\2233player\\App.test.tsx",
+      "label": "App.test.tsx",
+      "kind": "read",
+      "tool": "Read",
+      "selfTokens": 131,
+      "reads": 1,
+      "trips": 26,
+      "billed": 1966,
+      "perRead": 1966,
+      "share": 0.002554491473905558
+    },
+    {
+      "attr": "file:E:\\Projects\\2233player\\Cargo.toml",
+      "label": "Cargo.toml",
+      "kind": "read",
+      "tool": "Read",
+      "selfTokens": 59,
+      "reads": 1,
+      "trips": 34,
+      "billed": 1137,
+      "perRead": 1137,
+      "share": 0.0014777728675338688
+    },
+    {
+      "attr": "file:E:\\Projects\\2233player\\nsh.json",
+      "label": "nsh.json",
+      "kind": "read",
+      "tool": "Read",
+      "selfTokens": 45,
+      "reads": 1,
+      "trips": 34,
+      "billed": 868,
+      "perRead": 868,
+      "share": 0.00112711489896651
+    }
+  ],
+  "byAttr": [
+    {
+      "attr": "system",
+      "tokens": 427025,
+      "share": 0.5548135376971779
+    },
+    {
+      "attr": "attachment",
+      "tokens": 207738,
+      "share": 0.2699043253613834
+    },
+    {
+      "attr": "tool_result|Bash",
+      "tokens": 45939,
+      "share": 0.05968684191893478
+    },
+    {
+      "attr": "tool_result|WebFetch",
+      "tokens": 36406,
+      "share": 0.047300584049719825
+    },
+    {
+      "attr": "assistant_thinking",
+      "tokens": 19716,
+      "share": 0.025615706251132825
+    },
+    {
+      "attr": "tool_result|Read",
+      "tokens": 17209,
+      "share": 0.022359262466067724
+    },
+    {
+      "attr": "tool_use|Bash",
+      "tokens": 10283,
+      "share": 0.013360489983501065
+    },
+    {
+      "attr": "assistant_text",
+      "tokens": 2008,
+      "share": 0.0026086421406335326
+    },
+    {
+      "attr": "tool_use|WebFetch",
+      "tokens": 1829,
+      "share": 0.002376366891289949
+    },
+    {
+      "attr": "tool_use|Read",
+      "tokens": 1115,
+      "share": 0.0014481728857243161
+    },
+    {
+      "attr": "user_input",
+      "tokens": 405,
+      "share": 0.0005260703544347172
+    }
+  ],
+  "byRequest": [
+    {
+      "index": 1,
+      "time": "04:06",
+      "ratio": 0.030747,
+      "inputTokens": 32241,
+      "outputTokens": 288,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 2,
+      "time": "04:06",
+      "ratio": 0.032868,
+      "inputTokens": 34465,
+      "outputTokens": 221,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 3,
+      "time": "04:06",
+      "ratio": 0.033267,
+      "inputTokens": 34883,
+      "outputTokens": 237,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 4,
+      "time": "04:07",
+      "ratio": 0.033678,
+      "inputTokens": 35314,
+      "outputTokens": 50,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 5,
+      "time": "04:07",
+      "ratio": 0.034478,
+      "inputTokens": 36153,
+      "outputTokens": 318,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 6,
+      "time": "04:07",
+      "ratio": 0.034954,
+      "inputTokens": 36652,
+      "outputTokens": 99,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 7,
+      "time": "04:07",
+      "ratio": 0.035529,
+      "inputTokens": 37255,
+      "outputTokens": 478,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 8,
+      "time": "04:07",
+      "ratio": 0.036836,
+      "inputTokens": 38625,
+      "outputTokens": 108,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 9,
+      "time": "04:07",
+      "ratio": 0.037579,
+      "inputTokens": 39404,
+      "outputTokens": 221,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 10,
+      "time": "04:07",
+      "ratio": 0.038008,
+      "inputTokens": 39854,
+      "outputTokens": 340,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 11,
+      "time": "04:07",
+      "ratio": 0.039385,
+      "inputTokens": 41298,
+      "outputTokens": 605,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 12,
+      "time": "04:08",
+      "ratio": 0.041264,
+      "inputTokens": 43268,
+      "outputTokens": 394,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 13,
+      "time": "04:08",
+      "ratio": 0.041802,
+      "inputTokens": 43833,
+      "outputTokens": 260,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 14,
+      "time": "04:08",
+      "ratio": 0.042386,
+      "inputTokens": 44445,
+      "outputTokens": 101,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 15,
+      "time": "04:09",
+      "ratio": 0.043015,
+      "inputTokens": 45104,
+      "outputTokens": 218,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 16,
+      "time": "04:12",
+      "ratio": 0.043327,
+      "inputTokens": 45432,
+      "outputTokens": 298,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 17,
+      "time": "04:12",
+      "ratio": 0.044506,
+      "inputTokens": 46668,
+      "outputTokens": 228,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 18,
+      "time": "04:12",
+      "ratio": 0.044839,
+      "inputTokens": 47017,
+      "outputTokens": 668,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    },
+    {
+      "index": 19,
+      "time": "04:12",
+      "ratio": 0.045549,
+      "inputTokens": 47762,
+      "outputTokens": 831,
+      "usageSource": "transcript-tokens",
+      "credits": 0,
+      "originalCredits": 0,
+      "afterCompact": false
+    }
+  ],
+  "identity": {
+    "sumAttributed": 769673,
+    "billedInputTokens": 769673,
+    "absDiff": 0,
+    "ok": true
+  },
+  "pluginVersion": "2.7.4",
+  "selfCmd": "\"C:\\Users\\coldstonestudio\\.qoder-cn\\plugins\\cache\\qoder-marketplace\\qoder-credits-inspector\\2.7.4\\bin\\credits-inspector.cmd\" cli",
+  "linkHealth": {
+    "matched": 0,
+    "requests": 19,
+    "coverage": 0,
+    "usageSource": "transcript-tokens",
+    "breakdown": {
+      "proxy": 0,
+      "transcriptTokens": 19,
+      "transcriptRatio": 0
+    },
+    "logRecords": 0,
+    "lastRecordAt": null,
+    "recentRequests": 0,
+    "proxyErrors": null,
+    "clientAbort": null,
+    "clientAbortMaxMs": null,
+    "upstreamRejected": null,
+    "aborted": null,
+    "truncated": null,
+    "noUsage": null,
+    "slowestMs": null,
+    "supersededFailure": null
+  },
+  "subagents": {
+    "scanned": false,
+    "dir": null,
+    "probedPaths": [
+      "C:\\Users\\coldstonestudio\\.qoder-cn\\projects\\E--Projects-2233player\\01c878cc-5fea-401e-aba0-0e695d964e15\\subagents",
+      "C:\\Users\\coldstonestudio\\.qoder-cn\\projects\\01c878cc-5fea-401e-aba0-0e695d964e15\\subagents"
+    ],
+    "reason": "no-dir",
+    "count": 0,
+    "items": [],
+    "totals": {
+      "roundTrips": 0,
+      "billedInputTokens": 0,
+      "credits": 0,
+      "originalCredits": 0
+    },
+    "combined": {
+      "roundTrips": 19,
+      "billedInputTokens": 769673,
+      "credits": 0,
+      "originalCredits": 0
+    }
+  },
+  "manual": null,
+  "artifacts": {
+    "report": "report.json",
+    "canvas": "如何把 nsh 升级到 0.4.0 https___01c878cc.canvas.tsx"
+  }
+}

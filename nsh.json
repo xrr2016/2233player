@@ -1,0 +1,7 @@
+{
+  "name": "2233player",
+  "id": "cn.coldstoneboy.2233player",
+  "version": "1.0.0",
+  "build": 1,
+  "rust": "."
+}
